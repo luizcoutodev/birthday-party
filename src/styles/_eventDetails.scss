@@ -1,0 +1,43 @@
+.event-details {
+    padding: 80px 0;
+    background-color: black;
+    text-align: center;
+
+    @media (max-width: 766px) {
+        padding: 20px;
+    }
+
+    &__image{
+        max-width: 400px;
+        border-radius: 40px;
+        margin-right: 60px;
+
+        @media (max-width: 766px) {
+            max-width: 300px;
+            width: auto;
+            margin-right: 0;
+        }
+    }
+
+    &__title {
+        color: white;
+        font-size: 22px;
+    }
+
+    &__text {
+        color: white;
+        margin-top: 8px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+
+
+    .container {
+        display: flex;
+
+        @media (max-width: 766px) {
+            display: block;
+            width: 100%;
+        }
+    }
+}

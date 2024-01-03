@@ -1,0 +1,46 @@
+.infos-bar {
+    padding: 16px 24px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 60px;
+
+    @media (max-width: 766px){
+        margin: 16px;
+        margin-top: 40px;
+    }
+
+    &__infos {
+        display: flex;
+        gap: 120px;
+
+        @media (max-width: 1024px) {
+            gap: 16px;
+        }
+
+        &__item {
+            font-size: 14px;
+            color: black;
+            
+            b {
+                color: black;
+                font-size: 18px;
+                display:block;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

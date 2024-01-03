@@ -5,13 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Luiz Birthday Party</title>
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
+        <div class="hero__bg-img"></div>
         <div class="container">
-            asdad
+            <img class="hero__image" src="./images/20230811_180201.jpg" alt="eu-mesmo"> 
+            <div class="hero__info">
+                <p class="hero__text">Você está convidado para o maior evento do mês, isso mesmo, meu aniversário! Faltam <span id="counter"></span></p>
+                <div class="infos-bar">
+                    <ul class="infos-bar__infos">
+                        <li class="infos-bar__infos__item">
+                            <b>Localização </b> 
+                            Lá em casa!
+                        </li>
+                        <li class="infos-bar__infos__item">
+                            <b>Dia</b>
+                            02/06 
+                        </li>
+                        <li class="infos-bar__infos__item">
+                            <b>Hora:</b>
+                            20:00
+                        </li>
+                    </ul>
+                    <a href="#confirm-form" class="button"> Confirmar Presença</a>
+                </div>
         </div>
-
+        </div>
     </header>
+    <section class="event-details">
+        <div class="container">
+            <img src="./images/drinks.jpg" alt="drinks" class="event-details__image">
+            <div class="drinks">
+                <h3 class="event-details__title">Bebidas que terão na festa:</h3>
+                <ul>
+                    <li class="event-details__text">Vodka</li>
+                    <li class="event-details__text">Cervejas</li>
+                    <li class="event-details__text">Moscow Mule</li>
+                    <li class="event-details__text">Martini</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+  
 </body>
 </html>
