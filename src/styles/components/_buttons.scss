@@ -5,6 +5,7 @@
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
+    cursor: pointer;
 
     @media (max-width: 640px) {
         width: 100%;
@@ -14,5 +15,14 @@
 
     @media (min-width: 1024px) {
         margin-left: 12px;
+    }
+
+    &--secondary {
+        border: 2px solid white;
+
+        @media (max-width: 766px) {
+            width: 60%;
+            margin: 0 auto;
+        }
     }
 }

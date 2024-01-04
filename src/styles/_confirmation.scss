@@ -1,0 +1,23 @@
+.confirmation {
+    padding: 60px 0;
+    background-color: #380356;
+    text-align: center;
+
+    @media (max-width: 766px) {
+        padding: 20px 0;
+    }
+    
+    
+
+    label {
+        color: white;
+        display: block;
+    }
+
+    input {
+        border-radius: 8px;
+        padding: 4px;
+        padding-right: 50px;
+        margin-bottom: 16px;
+    }
+}

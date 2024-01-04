@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="hero">
@@ -15,7 +16,7 @@
         <div class="container">
             <img class="hero__image" src="./images/20230811_180201.jpg" alt="eu-mesmo"> 
             <div class="hero__info">
-                <p class="hero__text">Você está convidado para o maior evento do mês, isso mesmo, meu aniversário! Faltam <span id="counter"></span></p>
+                <p class="hero__text">Você está convidado para o maior evento do mês, isso mesmo, meu aniversário! <span id="counter"></span></p>
                 <div class="infos-bar">
                     <ul class="infos-bar__infos">
                         <li class="infos-bar__infos__item">
@@ -37,10 +38,10 @@
         </div>
     </header>
     <section class="event-details">
-        <div class="container">
+        <div class="container" data-aos="fade-left">
             <img src="./images/drinks.jpg" alt="drinks" class="event-details__image">
             <div class="drinks">
-                <h3 class="event-details__title">Bebidas que terão na festa:</h3>
+                <h3 class="title">Bebidas que terão na festa:</h3>
                 <ul>
                     <li class="event-details__text">Vodka</li>
                     <li class="event-details__text">Cervejas</li>
@@ -50,6 +51,21 @@
             </div>
         </div>
     </section>
-  
+    <section class="confirmation">
+        <div class="container" data-aos="fade-right">
+            <h2 class="title"> Preencha o formulário de presença </h2>
+            <form id="confirm-form" class="confirmation--form">
+                <label for="nome">Insira seu nome: </label>
+                <input type="text">
+                <label for="nome">Insira seu sobrenome: </label>
+                <input type="text">
+                <label for="nome">Insira sua idade: </label>
+                <input type="text">
+            </form>
+            <button class="button button--secondary"> enviar </button>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>

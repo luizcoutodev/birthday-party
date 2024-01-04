@@ -1,7 +1,6 @@
 @use './components/buttons';
 
 .hero {
-    display: flex;
     
     @media (max-width: 766px) {
         display: block;
@@ -14,13 +13,18 @@
         position: absolute;
         width: 100%;
         height: 70%;
+        margin-bottom: 0;
+       
         
         @media (max-width: 766px) {
             height: 100%;
+            padding: 0;
         }
+
         
-        filter: blur(3px);
-            -webkit-filter: blur(3px);
+        
+        filter: blur(2px);
+            -webkit-filter: blur(2px);
 
         }
 
@@ -35,6 +39,7 @@
     .container {
         display: flex;
         position: relative;
+        
     
         @media (max-width: 766px) {
             display: block;
@@ -58,7 +63,7 @@
         } 
     }
 
-    &__text {
+    &__text, #counter {
         font-size: 30px;
         margin-top: 20px;
         color: white;
